@@ -3,15 +3,15 @@ const mongoose = require("mongoose"); //
 const cors = require("cors");
 const router = require("./Routes/jobseekerroutes");
 const adminrouter = require("./Routes/adminroutes");
-const dburl = "mongodb://0.0.0.0:27017/demoproject14";
-mongoose
-  .connect(dburl)
-  .then(() => {
-    console.log("Connected to DB successfully");
-  })
-  .catch((err) => {
-    console.log(err.message);
-  });
+// const dburl = "mongodb://0.0.0.0:27017/demoproject14";
+// mongoose
+//   .connect(dburl)
+//   .then(() => {
+//     console.log("Connected to DB successfully");
+//   })
+//   .catch((err) => {
+//     console.log(err.message);
+//   });
 const app = express();
 app.use(express.json());
 app.use(cors());
